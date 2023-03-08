@@ -208,7 +208,7 @@ section{
 }
 
 .home{
-    min-height: 100vh;
+    min-height: 20vh;
     display: flex;
     align-items: center;
     background:url(../map/gis.jpg) no-repeat;

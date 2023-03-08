@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GEOG7029A</title>
+    <title>Shandu-GIS</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -25,9 +25,7 @@
 
     <nav class="navbar">
         <a href="index.html">Home</a>  
-        <a href="D.Prophet_Forecast_Cumulative.html" target="_blank">Forecasted Cumulative Cases</a>  
-        <a href="D.Prophet_Forecast_Daily.html" target="_blank">Forecasted Daily Cases</a> 
-        <a href="https://idcossa.github.io/GEOG7029_SA_Mapping/" target="_blank">SA: Web Map</a>      
+        <!--<a href="https://idcossa.github.io/GEOG7029_SA_Mapping/" target="_blank">SA: Web Map</a> -->
         
         
     </nav>
@@ -38,10 +36,7 @@
         <div class="fas fa-bars" id="menu-btn"></div>
     </div>
 
-    <div class="search-form">
-        <input type="search" id="search-box" placeholder="search here...">
-        <label for="search-box" class="fas fa-search"></label>
-    </div>    
+ 
 
 </header>
 
@@ -50,427 +45,169 @@
 <!-- home section starts  -->
 
 
-<br><br><br><br><br><br>
+<section class="home" id="home">
+
+    <div class="content">      
+
+        
+    </div>    
+
+</section>
 
 <!-- home section ends -->
 
 <!-- reviews section starts  -->
 
 <section class="blogs" id="blogs">
-    <h1 class="heading"><span>Covid-19 Spatial Mapping: South Africa. </span></h1>
-    <h1 class="heading"> GEOG7045A <span>Wits </span> </h1>
+    <h1 class="heading"><span> Comparison Between RF and SVM for LULC classification, Nelson Mandela Bay </span> South Africa</h1>
+    <h1 class="heading"> GIS Industrial Project <span>CPUT </span> </h1>
     
-    <h1 class="heading"> Study finding <span>Appendix</span> </h1>
-    <p class="heading">RStudio and Jupyter Notebook Code:
-        <a href="https://github.com/idcossa/FB_Prophet_SA_Covid.git" target="_blank"> Github Repository Code</a> 
+    <!--<h1 class="heading"> Study finding <span>Appendix</span> </h1>-->
+    <p class="heading">
+        <a href="https://code.earthengine.google.com/?accept_repo=users/idcossa/Research_Project" target="_blank"> Google Earth Engine Code</a> 
     </p>
     
+
     <div class="box-container">
-
-        <div class="box">
-            <div class="image">
-                <img src="Images/Study_Area.jpg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Methods</a>
-                <span>Study Area</span>
-                <p></p>
-                <a href="Images/Study_Area.jpg" target="_blank" class="btn">View</a>
-            </div>
+        <!--ISSUE KZN-->
+      <div class="box">
+        <div class="image">
+            <img src="Images/Reflectance_AllBands.png" alt="">
         </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="Images/Hospitals.jpg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Spatial Analysis</a>
-                <span>SA Hospitals</span>
-                <p></p>
-                <a href="Images/Hospitals.jpg" target="_blank" class="btn">View</a>
-            </div>
+        <div class="content">
+            <a href="#" class="title">Signature Plot</a>
+            <span> </span>
+            <p> Signature Plot for Sentinel-2 Bands B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11 and B12 respectively. The signature plot was computed to select bands which are appropriate for the LULC classification model, selecting bands and removing unnecessary bands. Shows the significance of each band, and B2, B3, B4, and B8 were selected and used to compute the colour composite and creating the training and testing samples.</p>
+            <a href="Images/Reflectance_AllBands.png" target="_blank" class="btn">View</a>
         </div>
+     </div>
 
-        <div class="box">
-            <div class="image">
-                <img src="Images/B.Mean_SD_Hospitals.jpg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Point Pattern Analysis</a>
-                <span>Mean Distance & Standard Distance</span>
-                <p></p>
-                <a href="Images/B.Mean_SD_Hospitals.jpg" target="_blank" class="btn">View</a>
-            </div>
+       <!--ISSUE KZN-->
+       <div class="box">
+        <div class="image">
+            <img src="Images/Reflectance.png" alt="">
         </div>
-
-
-        <div class="box">
-            <div class="image">
-                <img src="Images/E.Hospitals_SeabornScatter.png" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Point Pattern Analysis</a>
-                <span>Hospitals: Seaborn</span>
-                <p></p>
-                <a href="Images/E.Hospitals_SeabornScatter.png" target="_blank" class="btn">View</a>
-            </div>
+        <div class="content">
+            <a href="#" class="title">Signature Plot</a>
+            <span> </span>
+            <p> Figure shows the signature plot surface reflectance for each class such as Water, Agriculture, Urban/Built-Up, Forest, Sparse vegetation, Barren Land and Sand Beach in spectral bands B2, B3, B4, B8 and B9. </p>
+            <a href="Images/Reflectance.png" target="_blank" class="btn">View</a>
         </div>
+     </div>
+      
+
         
-       
-        <div class="box">
-            <div class="image">
-                <img src="Images/E.Hospitals_SeabornScatter_BaseMap.png" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Point Pattern Analysis</a>
-                <span>Hospitals: Seaborn</span>
-                <p></p>
-                <a href="Images/E.Hospitals_SeabornScatter_BaseMap.png" target="_blank" class="btn">View</a>
-            </div>
-        </div>
-        <!-- SPI -->
-        <div class="box">
-            <div class="image">
-                <img src="Images/E.Hospitals_KDE.png" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Point Pattern Analysis</a>
-                <span>Hospitals</span>
-                <p></p>
-                <a href="Images/E.Hospitals_KDE.png" target="_blank" class="btn">View</a>
-            </div>
-        </div>
+
         
-        <div class="box">
-            <div class="image">
-                <img src="Images/E.Hospitals_JointDistribution.png" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Point Pattern Analysis</a>
-                <span>Hospitals: Joint Distribution</span>
-                <p></p>
-                <a href="Images/E.Hospitals_JointDistribution.png" target="_blank" class="btn">View</a>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image">
-                <img src="Images/Population_and_Density_21_18.jpg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Spatial Analysis</a>
-                <span>SA: Population</span>
-                <p></p>
-                <a href="Images/Population_and_Density_21_18.jpg" target="_blank" class="btn">View</a>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image">
-                <img src="Images/Population_Estimate_2021.jpg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Spatial Analysis</a>
-                <span>2021: Population Estimate</span>
-                <p></p>
-                <a href="Images/Population_Estimate_2021.jpg" target="_blank" class="btn">View</a>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image">
-                <img src="Images/A.Histogram_All_Case.jpg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Spatial Statistic</a>
-                <span>ESDA: Histogram</span>
-                <p></p>
-                <a href="Images/A.Histogram_All_Case.jpg" target="_blank" class="btn">View</a>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image">
-                <img src="Images/A.Line_All.jpg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Spatial Statistics</a>
-                <span>ESDA: Line Plot</span>
-                <p> </p>
-                <a href="Images/A.Line_All.jpg" target="_blank" class="btn">View</a>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image">
-                <img src="Images/A.TimeSeries_All_Case.jpg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Spatial Statistic</a>
-                <span>ESDA: Time Series</span>
-                <p></p>
-                <a href="Images/A.TimeSeries_All_Case.jpg" target="_blank" class="btn">View</a>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image">
-                <img src="Images/A.QQ_All_Case.jpg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Spatial Statistic</a>
-                <span>ESDA: QQ Plot</span>
-                <p></p>
-                <a href="Images/A.QQ_All_Case.jpg" target="_blank" class="btn">View</a>
-            </div>
-        </div>
 
-        <div class="box">
-            <div class="image">
-                <img src="Images/E.Cumulative_Cases_Provinces.png" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Temporal Variability</a>
-                <span>Line Plot: Cumulative Case Per Province</span>
-                <p></p>
-                <a href="Images/E.Cumulative_Cases_Provinces.png" target="_blank" class="btn">View</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="Images/E.Cumulative_Death_Provinces.png" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Temporal Variability</a>
-                <span>Line Plot: Cumulative Death Per Province</span>
-                <p></p>
-                <a href="Images/E.Cumulative_Death_Provinces.png" target="_blank" class="btn">View</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="Images/E.Cumulative_Recoveries_Provinces.png" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Temporal Variability </a>
-                <span>Line Plot: Cumulative Recovery Per Province</span>
-                <p> </p>
-                <a href="Images/E.Cumulative_Recoveries_Provinces.png" target="_blank" class="btn">View</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="Images/E.Daily_Cases_Provinces.png">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Temporal Variability </a>
-                <span>Line Plot: Daily Cases Per Province</span>
-                <p> </p>
-                <a href="mImages/E.Daily_Cases_Provinces.png" target="_blank" class="btn">View</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="Images/E.Daily_Death_Provinces.png" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Temporal Variability</a>
-                <span>Daily Death Per Province</span>
-                <p> </p>
-                <a href="Images/E.Daily_Death_Provinces.png" target="_blank" class="btn">View</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="Images/E.Daily_Recoveries_Provinces.png" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title"> Temporal Variability</a>
-                <span>Line Plot: Daily Recoveries Per Province</span>
-                <p> </p>
-                <a href="Images/E.Daily_Recoveries_Provinces.png" target="_blank" class="btn">View</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="Images/C.TimeSeries_ConfirmedCases.jpg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Temporal Variability</a>
-                <span>SA: Confirmed Cumulative and Daily Covid 19</span>
-                <p>  </p>
-                <a href="Images/C.TimeSeries_ConfirmedCases.jpg" target="_blank" class="btn">View</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="Animation/Animation/Animated/Cummulated_Cases.gif" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Spatiotemporal Analysis</a>
-                <span>Animation: SA Cumulated Cases Weekly</span>
-                <p>  </p>
-                <a href="Animation/Animation/Animated/Cummulated_Cases.gif" target="_blank" class="btn">View</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="Animation/Animation/Animated/Cummulated_Death.gif" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Spatiotemporal Analysis</a>
-                <span>Animation: SA Cumulated Death Weekly</span>
-                <p> </p>
-                <a href="Animation/Animation/Animated/Cummulated_Death.gif" target="_blank" class="btn">View</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="Animation/Animation/Animated/Cummulated_Recoveries.gif" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Spatiotemporal Analysis</a>
-                <span>Animation: SA Cumulated Recoveries Weekly</span>
-                <p> </p>
-                <a href="Animation/Animation/Animated/Cummulated_Recoveries.gif" target="_blank" class="btn">View</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="Animation/Animation/Animated/Daily_Cases.gif" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Spatiotemporal Analysis</a>
-                <span>Animation: SA Daily Cases Weekly</span>
-                <p>  </p>
-                <a href="Animation/Animation/Animated/Daily_Cases.gif" target="_blank" class="btn">View</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="Animation/Animation/Animated/Daily_Death.gif" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Spatiotemporal Analysis</a>
-                <span>Animation: SA Daily Death Weekly </span>
-                <p>  </p>
-                <a href="Animation/Animation/Animated/Daily_Death.gif" target="_blank" class="btn">View</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="Animation/Animation/Animated/Daily_Recoveries.gif" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Spatiotemporal Analysis</a>
-                <span>Animation: SA Daily Recoveries Weekly </span>
-                <p>  </p>
-                <a href="Animation/Animation/Animated/Daily_Recoveries.gif" target="_blank" class="btn">View</a>
-            </div>
-        </div>
+      
+    </div>
 
 
 
 
+    <div class="box-container">
         <!--ISSUE KZN-->
         <div class="box">
             <div class="image">
-                <img src="Images/KZN_Covid_CaseMo.png" alt="">
+                <img src="Images/colour_composite.jpg" alt="">
             </div>
             <div class="content">
-                <a href="#" class="title">Spatiotemporal Analysis</a>
-                <span>KZN: Montlhy Confirmed Cases </span>
-                <p>  </p>
-                <a href="Images/KZN_Covid_CaseMo.png" target="_blank" class="btn">View</a>
+                <a href="#" class="title">Colour Composite</a>
+                <span> </span>
+                <p> Sentinel Satellite image colour composite was then used to analyse the image class and prepare the image for creating training and testing dataset. True and False colour image composite were computed based on band combination of B8, B4 and B3 for False Colour and B4, B3 and B2 for True Colour. Training and testing samples were as water = 40, built-up = 55, forest = 55, sparse vegetation = 60, agriculture = 76, bare soil = 38 and sand beach = 23. The ratio of 70% training and 30% validation was applied to training the classifier and testing the performance of the classifier. </p>
+                <a href="Images/colour_composite.jpg" target="_blank" class="btn">View</a>
             </div>
         </div>
 
-
-        <div class="box">
-            <div class="image">
-                <img src="Images/D.Prophet_Forecast_Seasonality_CumlativeCases.jpg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Forecasting</a>
-                <span>Seasonality: Cumulative SA Cases </span>
-                <p>  </p>
-                <a href="Images/D.Prophet_Forecast_Seasonality_CumlativeCases.jpg" target="_blank" class="btn">View</a>
-            </div>
+    <div class="box">
+        <div class="image">
+            <img src="Images/indexes.jpg" alt="">
         </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="Images/D.Prophet_Forecast_Seasonality_Dailyases.jpg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Forecasting</a>
-                <span>Seasonality: Daily SA Cases </span>
-                <p>  </p>
-                <a href="Images/D.Prophet_Forecast_Seasonality_Dailyases.jpg" target="_blank" class="btn">View</a>
-            </div>
+        <div class="content">
+            <a href="#" class="title">Index Calculation</a>
+            <span> </span>
+            <p> NDVI is a widely known vegetation index that is often used to signifies the health of vegetation, other known vegetation index is Enhanced Vegetation Index (EVI), Ration Vegetation Index (RVI) and Perpendicular Vegetation Index (PVI). NDBI is the index method which has not gained famous like NDVI. NDBI is used to highlight the built-up areas, like NDVI this model have its own formula. Other form of built-up index include Build-Up Index (BU) or Urban Index (UI). NDWI is used to enhance water bodies in most cases. Water has low reflectance and decreases from visible portion of spectrum. NDWI and MNDWI are widely used to highlight water, there is differentiated phenomenon between NDWI and MNDWI where MNDWI strongly highlight water than NDWI.   </p>
+            <a href="Images/indexes.jpg" target="_blank" class="btn">View</a>
         </div>
+    </div>
 
+    </div>
+    
+    <div class="box-container">
+      
 
         <div class="box">
             <div class="image">
-                <img src="Images/D.Prophet_Forecast_CumlativeCases.jpg" alt="">
+                <img src="Images/classifcation.jpg" alt="">
             </div>
             <div class="content">
-                <a href="#" class="title">Forecasting</a>
-                <span>Forecasted: Cumulative SA Cases </span>
-                <p>  </p>
-                <a href="Images/D.Prophet_Forecast_CumlativeCases.jpg" target="_blank" class="btn">View</a>
+                <a href="#" class="title">Classification</a>
+                <span> </span>
+                <p> Finally, the LULC map were produced based on RF and SVM ML classifiers. Based on Figure, one can conclude the variability of LULC classes, where sparse vegetation is spread across the region and dominantly occurs in the northern part of the district. Based on the LULC classified map in Figure 8, NMB was classified into 7 different classes such as water bodies, built-up areas, forests, sparse vegetation, agriculture, barren land, and sand beaches. Some of the classes such as forest, sparse vegetation, and agriculture; bare land and sand were differentiated based on the reflectance of each pixel.  </p>
+                <a href="Images/classifcation.jpg" target="_blank" class="btn">View</a>
             </div>
         </div>
 
         <div class="box">
             <div class="image">
-                <img src="Images/D.Prophet_Forecast_DailyCases.jpg" alt="">
+                <img src="Images/Area_Table.JPG" alt="">
             </div>
             <div class="content">
-                <a href="#" class="title">Forecasting</a>
-                <span>Forecasted:Daily SA Cases </span>
-                <p>  </p>
-                <a href="Images/D.Prophet_Forecast_DailyCases.jpg" target="_blank" class="btn">View</a>
+                <a href="#" class="title">Class</a>
+                <span> </span>
+                <p>  Based on Table below, the dominant class is sparse vegetation in both RF and SVM, where it accounts for 730 〖km〗^2 for RF and 745 〖km〗^2 for SVM, followed by forest 681 〖km〗^2 and 721 〖km〗^2 for RF and SVM and NMB is least dominated by sand beach in both RF 21 〖km〗^2 and SVM 24 〖km〗^2. The statistics summary is represented in Figure by pie chart which demonstrate the classes and area accountability.</p>
+                <a href="Images/Area_Table.JPG" target="_blank" class="btn">View</a>
             </div>
         </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="Images/D.Prophet_Forecast_MAPE_CumlativeCases.jpg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Forecasting</a>
-                <span>Cross Validation: MAPE Cumulative SA Cases </span>
-                <p>  </p>
-                <a href="Images/D.Prophet_Forecast_MAPE_CumlativeCases.jpg" target="_blank" class="btn">View</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="Images/D.Prophet_Forecast_MAPE_DailyCases.jpg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">Forecasting</a>
-                <span>Cross Validation: MAPE Daily SA Cases </span>
-                <p>  </p>
-                <a href="Images/D.Prophet_Forecast_MAPE_DailyCases.jpg" target="_blank" class="btn">View</a>
-            </div>
-        </div>
-
-
-
+       
 
     </div>
 
+
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="Images/Area.png" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Classes Area</a>
+                <span> </span>
+                <p>There is an aggrement is area associated with each class for RF and SVM, where class areas increase proportionally between the algorithms classification. </p>
+                <a href="Images/Area.png" target="_blank" class="btn">View</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="Images/rf_matrix.JPG" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Random Forest Accuracy</a>
+                <span> </span>
+                <p> RF classification produced validation overall accuracy of 84% with a training accuracy of 98.44% with Out of Bag Error Estimate = 0.13 for 60 trees.
+                    </p>
+                <a href="Images/rf_matrix.JPG" target="_blank" class="btn">View</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="Images/svm_matrix.JPG" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Support Vector Machine Accuracy</a>
+                <span> </span>
+                <p> SVM classification produced an overall accuracy of 91% with a training accuracy of 94.24%. it can be concluded that SVm outperfome RF for the given models.</p>
+                <a href="Images/svm_matrix.JPG" target="_blank" class="btn">View</a>
+            </div>
+        </div>
+    </div>
+
+
 </section>
+
+
 
 <!-- blogs section ends -->
 
@@ -479,7 +216,8 @@
 <section class="footer">
 
     
-    <div class="credit">created by <span>Doctor Shandu</span> | Advanced GIS Mini Project</div>
+    <div class="credit">created by <span>Doctor Shandu: 218213654 </span>| idcossa@gmail.com | GIS Industrial Project</div>
+
 
 </section>
 
